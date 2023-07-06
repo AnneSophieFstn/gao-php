@@ -32,8 +32,16 @@ Un token lui sera attribué sous un temps valide.
 
 Créer votre base de données.
 
-1. Dans le fichier ... 
-   $ Modifier les elements ci-dessous avec vos propres configurations.
-   $ ...
+1. Dans le fichier config/datapase.php
+   $ Modifier les différents elements avec vos propres configurations.
+      
+      $configDB = [
+         "db_host" => "NAME HOST",
+         "db_name" => "NAME DATABASE",
+         "db_user" => "USER",
+         "db_password" => "PASSWORD"
+      ];
+
+      Assurer vous que la base de données correspond au projet.
 
 2. Lancer le projet
