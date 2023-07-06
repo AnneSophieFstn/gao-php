@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= URL ?>/public/css/bootstrap.min.css">
     <title>Gestion attribution d'ordinateur</title>
 </head>
 <body>
@@ -17,18 +17,18 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarColor01">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Accueil
+          <a class="nav-link active" href="accueil">Accueil
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ordinateur</a>
+          <a class="nav-link" href="utilisateurs">Utilisateurs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Utilisateur</a>
+          <a class="nav-link" href="ordinateurs">Ordinateurs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Réservation</a>
+          <a class="nav-link" href="reservations">Réservations</a>
         </li>
       </ul>
     </div>
@@ -43,6 +43,6 @@
     <?= $content ?>
 </div>
 
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="<?= URL ?>/public/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
