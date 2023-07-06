@@ -28,16 +28,17 @@
         header('Location: ' . URL . "utilisateurs");
     }
     
-    public function modifierUtilisateur(){
+    public function modifierUtilisateur($id){
+        $utilisateur = $this->utilisateursManager->getOneUser($id);
         require "views/utilisateurs/modifierUtilisateur.views.php";
     }
 
-    /*public function modifierUtilisateurValidation(){
-        $utilisateurs = $this->utilisateursManager->updateUser($_POST['id'], $_POST['nom'], $_POST['prenom']);
+    public function modifierUtilisateurValidation(){
+        $utilisateur = $this->utilisateursManager->updateUser($_POST['id'], $_POST['nom'], $_POST['prenom']);
         header('Location: ' . URL . "utilisateurs");
     }
 
-    public function supprimerUtilisateur($id){
+    /*public function supprimerUtilisateur($id){
         $utilisateurs = $this->utilisateursManager->deleteUsers($id);
         require "views/utilisateurs.views.php";
     } */

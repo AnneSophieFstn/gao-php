@@ -31,7 +31,8 @@ if(empty($_GET["page"])){
                 $userController->ajouterUtilisateurValidation();
             } else if($url[1] == "modifier"){
                 $userController->modifierUtilisateur($url[2]);
-                //echo "modifier un utilisateur";
+            } else if($url[1] == "modifierValidation"){
+                $userController->modifierUtilisateurValidation($url[2]);
             } else if($url[1] == "supprimer"){
                 echo "supprimer un utilisateur";
             }
